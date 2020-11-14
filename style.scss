@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inputDiv {
+    width: 27rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+
+    h2 {
+    }
+
+    #myId {
+        width: 2rem;
+        margin-left: 2rem;
+    }
+
+    button {
+        padding: 0.5rem;
+    }
+}
+
+.wrapper {
+    display: block;
+    width: fit-content;
+    position: relative;
+
+    img {
+    }
+
+    .pokemon {
+        .name {
+            position: absolute;
+            top: 27px;
+            left: 120px;
+            text-transform: capitalize;
+        }
+
+        .id {
+            position: absolute;
+            top: 27px;
+            right: 30px;
+        }
+        .id::before {
+            content: "#";
+        }
+
+        img {
+            position: absolute;
+            top: 80px;
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .details {
+            position: absolute;
+            top: 350px;
+            left: 50%;
+            height: fit-content;
+            width: fit-content;
+            transform: translateX(-50%);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                padding: 1rem;
+            }
+        }
+    }
+}
